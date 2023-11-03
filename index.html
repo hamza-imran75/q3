@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamza Imran's Portfolio</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .gradient-background {
+    /* Gradient color background */
+    background: linear-gradient(45deg, blue, black);
+    padding: 50px;
+    color: white;
+  }
+  
+  .centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .portfolio-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .projects, .reviews, .contact {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .contact-form button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: darkred;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    .gradient-background {
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body class="gradient-background ">
+
+<div class="centered-content">
+  <div class="portfolio-image">
+    <!-- Replace 'your-image.jpg' with your actual image path -->
+    <img src="me.JPG" alt="Hamza Imran" style="width: 200px; height: 200px; border-radius: 50%;">
+  </div>
+  <h1>Hamza Imran</h1>
+</div>
+
+<div class="projects centered-content">
+  <h2>Previous Projects</h2>
+  <!-- Add your projects here -->
+  <p>Project 1</p>
+  <p>Project 2</p>
+  <p>Project 3</p>
+  <!-- More projects can be added accordingly -->
+</div>
+
+<div class="reviews centered-content">
+  <h2>Reviews</h2>
+  <!-- Add reviews here -->
+  <blockquote>"Hamza did an incredible job on our web project!" - Client A</blockquote>
+  <blockquote>"Highly recommend Hamza's services for any digital work!" - Client B</blockquote>
+  <!-- More reviews can be added accordingly -->
+</div>
+
+<div class="contact centered-content">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+</body>
+</html>
